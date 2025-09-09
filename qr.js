@@ -151,7 +151,7 @@ router.get('/', async (req, res) => {
                             
                             // Send video thumbnail with caption
                             await sock.sendMessage(userJid, {
-                                image: { url: 'https://img.youtube.com/vi/-oz_u1iMgf8/maxresdefault.jpg' },
+                                image: { url: 'https://i.postimg.cc/RZb4wYsK/IMG-0168.jpg' },
                                 caption: `🎬 *MOEBOT Full Setup Guide!*\n\n🚀 Bug Fixes + New Commands + Fast AI Chat\n📺 Watch Now: https://wa.me/message/HEYNTN2KD6K7O1`
                             });
                             console.log("🎬 Video guide sent successfully");
