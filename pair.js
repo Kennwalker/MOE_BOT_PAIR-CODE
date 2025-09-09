@@ -68,12 +68,12 @@ router.get('/', async (req, res) => {
                     console.log("📱 Sending session file to user...");
                     
                     try {
-                        const sessionKnight = fs.readFileSync(dirs + '/creds.json');
+                        const sessionMoebot = fs.readFileSync(dirs + '/creds.json');
 
                         // Send session file to user
                         const userJid = jidNormalizedUser(num + '@s.whatsapp.net');
                         await Moebot.sendMessage(userJid, {
-                            document: sessionKnight,
+                            document: sessionMoebot,
                             mimetype: 'application/json',
                             fileName: 'creds.json'
                         });
